@@ -1,0 +1,41 @@
+/* set fixed width of navbar */
+.navigation{
+  margin:0;
+  padding:0;
+  width: 300px;
+  position: fixed;
+  overflow: auto;
+}
+
+/* remove bullet points and padding*/
+.mainmenu, .submenu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* set background color + give all links padding and color*/
+.mainmenu a{
+  display: block;
+  background-color: rgb(49, 242, 61);
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(249, 142, 233);
+}
+
+/* when hovering over submenu - display the menu inside */
+.mainmenu li:hover .submenu{
+  display:block;
+  max-height: 200px;
+}
+/* initial state of submenu - hides the submenu */
+.submenu{
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-out;
+}
+
+/* change link color when hovering over */
+.mainmenu a:hover{
+  color: deeppink;
+}
