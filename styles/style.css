@@ -8,6 +8,20 @@ body {
   padding-left: 8%;
 }
 
+a {
+  color: darkorchid;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color:darkorchid;
+}
+
+a:hover {
+  color:hotpink
+}
+
 /* Give the nav bar some margins */
 #nav-placeholder {
   margin: 1.5em 0 3.5em;
@@ -79,7 +93,7 @@ p {
 /* all paragraphs to have space at bottom and not take up full screen */
 p {
   margin-bottom: 1.5em;
-  max-width:80%;
+  max-width:65%;
 }
 
 /* set profile image to set size */
@@ -154,6 +168,11 @@ img {
 
 .bold {
   font-weight: bold;
+}
+
+.media-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Style all font awesome icons */
