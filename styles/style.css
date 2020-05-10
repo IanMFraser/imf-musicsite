@@ -2,7 +2,7 @@
 body{
   color: #171717;
   background-color: #f8f8f8;
-  font-family: 'Consolas','Inconsolata', 'Monaco', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.5em + (1.6 - 1.5) * ((100vw - 300px)/(1600 - 300)));
   padding-left: 8%;
