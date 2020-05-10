@@ -57,6 +57,11 @@ body {
   margin-left: 1px;
 }
 
+.blog-image {
+  min-width: 300px;
+  min-height: 300px;
+}
+
 .content {
   min-height: 500px;
 }
@@ -90,8 +95,8 @@ p {
 }
 
 img {
-  min-height:200px;
-  max-width: 200px;
+  min-height:250px;
+  max-width: 250px;
   margin-bottom: 50px;
   object-fit: cover;
 }
@@ -223,6 +228,12 @@ img {
 }
 /* responsive design for screens smaller than my laptop */
 @media screen and (max-width: 600px) {
+
+  #name {
+    font-size: 3.5em;
+    font-weight: 1000;
+  }
+
   .submenu {
     display:block;
   }
@@ -234,6 +245,10 @@ img {
     'kero2'
     'traj'
     'adhoc'
+  }
+
+  h1 {
+    margin-left: 25px;
   }
 }
 
