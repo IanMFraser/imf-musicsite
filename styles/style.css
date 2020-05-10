@@ -9,13 +9,13 @@ body {
 }
 
 a {
-  color: darkorchid;
+  color: fuchsia;
   text-decoration: none;
 
 }
 
 a:visited {
-  color:darkorchid;
+  color:fuchsia;
 }
 
 a:hover {
@@ -91,10 +91,12 @@ p {
 }
 
 /* all paragraphs to have space at bottom and not take up full screen */
-p {
+p,
+li {
   margin-bottom: 1.5em;
   max-width:65%;
 }
+
 
 /* set profile image to set size */
 .about-content img {
@@ -238,7 +240,18 @@ img {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 768px) {
+  p,
+  li {
+    margin-bottom: 1.5em;
+    max-width:95%;
+  }
+
+  .submenu {
+    display: block;
+    font-size: .76em;
+  }
+
   .grid-container {
     grid-template-areas:
     'realness harlem'
@@ -247,10 +260,15 @@ img {
   }
 }
 /* responsive design for screens smaller than my laptop */
-@media screen and (max-width: 600px) {
+@media screen and (max-width:320px) {
 
+  p,
+  li {
+    margin-bottom: 1.5em;
+    max-width:95%;
+  }
   .name {
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 1000;
   }
 
@@ -260,13 +278,20 @@ img {
     margin-left:5px;
   }
 
+  .blog-image {
+    min-width: 200px;
+    min-height: 200px;
+  }
+
   .blog-date {
     font-size: .75em;
     margin-left: 5px;
   }
 
   .submenu {
-    display:block;
+    display: block;
+    font-size: .5em;
+    text-align: center;
   }
   .grid-container {
     grid-template-areas:
