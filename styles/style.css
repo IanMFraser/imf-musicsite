@@ -42,7 +42,7 @@ body {
 }
 
 /* make my name larger and bolder */
-#name {
+.name {
   font-size: 2.1em;
   font-weight: 1000;
 }
@@ -201,7 +201,7 @@ img {
   color: black;
 }
 
-#footer {
+.footer {
   text-align: center;
   font-size: 0.55em;
   font-style: italic;
@@ -229,9 +229,20 @@ img {
 /* responsive design for screens smaller than my laptop */
 @media screen and (max-width: 600px) {
 
-  #name {
+  .name {
     font-size: 3.5em;
     font-weight: 1000;
+  }
+
+  .blog-title {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-left:5px;
+  }
+
+  .blog-date {
+    font-size: .75em;
+    margin-left: 5px;
   }
 
   .submenu {
@@ -247,9 +258,7 @@ img {
     'adhoc'
   }
 
-  h1 {
-    margin-left: 25px;
-  }
+
 }
 
 
