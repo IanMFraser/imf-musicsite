@@ -1,5 +1,5 @@
 /* Setup background-color, font-color/size/family, and padding of body  */
-body{
+body {
   color: #171717;
   background-color: #f8f8f8;
   font-family: 'Fira Code', monospace;
@@ -9,17 +9,17 @@ body{
 }
 
 /* Give the nav bar some margins */
-#nav-placeholder{
+#nav-placeholder {
   margin: 1.5em 0 3.5em;
 }
 
 /* align along leftside */
-.navigation{
+.navigation {
   margin-left: 0;
 }
 
 /* style all li elements in navbar */
-.mainmenu li{
+.mainmenu li {
   padding-right: 40px;
   display: inline;
   list-style-type: none;
@@ -28,12 +28,12 @@ body{
 }
 
 /* get rid of underline on links and set to black */
-.mainmenu a{
+.mainmenu a {
   text-decoration: none;
   color:black;
 }
 
-.submenu{
+.submenu {
   display: inline;
 }
 
@@ -42,60 +42,61 @@ body{
 }
 
 /* make my name larger and bolder */
-#name{
+#name {
   font-size: 2.1em;
   font-weight: 1000;
 }
 
-.content{
+.content {
   min-height: 500px;
 }
-.content ul{
+.content ul {
   margin: 0 0 0 15px;
 }
 /* global settings - more to come */
-ul, p{
+ul, p {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 /* all paragraphs to have space at bottom and not take up full screen */
-p{
+p {
   margin-bottom: 1.5em;
   max-width:80%;
 }
 
 /* set profile image to set size */
-.about-content img{
+.about-content img {
   max-width: 300px;
 }
 
-.about-content .bio{
+.about-content .bio {
   max-width:700px;
 }
 /*  */
-.box{
+.box {
   max-width: 320px;
 }
 
-img{
-  min-width: 180px;
+img {
+  min-height:200px;
   max-width: 200px;
   margin-bottom: 50px;
 }
-.box img{
+
+.box img {
   display: block;
   margin: 0 auto;
   border: none;
   margin-bottom: 20px;
 }
 
-.box p{
+.box p {
   text-align: center;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   transition: all 0.5s;
   grid-template-columns: 300px 300px;
@@ -103,7 +104,6 @@ img{
   grid-template-areas: 
   'realness harlem kero1'
   'kero2 traj adhoc'
-
 }
 
 .realness {
@@ -126,7 +126,7 @@ img{
   grid-area: traj;
 }
 
-.adhoc{
+.adhoc {
   grid-area: adhoc;
 }
 .box p {
@@ -134,7 +134,7 @@ img{
   text-align: center;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -179,12 +179,12 @@ img{
   animation-delay: 0.05s;
 }
 
-.back-link{
+.back-link {
   text-decoration: none;
   color: black;
 }
 
-#footer{
+#footer {
   text-align: center;
   font-size: 0.55em;
   font-style: italic;
@@ -193,16 +193,16 @@ img{
 
 
 /* responsive design for screens larger than my laptop */
-@media screen and (min-width: 1300px){
-  .grid-container{
+@media screen and (min-width: 1300px) {
+  .grid-container {
     grid-template-areas:
     'realness harlem kero1'
     'kero2 traj adhoc'
   }
 }
 
-@media screen and (max-width: 800px){
-  .grid-container{
+@media screen and (max-width: 800px) {
+  .grid-container {
     grid-template-areas:
     'realness harlem'
     'kero1 kero2'
@@ -210,11 +210,11 @@ img{
   }
 }
 /* responsive design for screens smaller than my laptop */
-@media screen and (max-width: 600px){
-  .submenu{
+@media screen and (max-width: 600px) {
+  .submenu {
     display:block;
   }
-  .grid-container{
+  .grid-container {
     grid-template-areas:
     'realness'
     'harlem'
