@@ -236,6 +236,9 @@ img {
   margin: 50px 0px;
 }
 
+iframe { 
+  width: 50%
+}
 
 /* responsive design for screens larger than my laptop */
 @media screen and (min-width: 769px) {
@@ -252,10 +255,15 @@ img {
     margin-bottom: 1.5em;
     max-width:95%;
   }
+  iframe { 
+    width: 100%
+  }
+  
 
   .submenu {
     display: block;
     font-size: .76em;
+    margin-left: 1%;
   }
 
   .grid-container {
@@ -273,9 +281,20 @@ img {
     margin-bottom: 1.5em;
     max-width:95%;
   }
+  iframe { 
+    width: 100%
+  }
+  
   .name {
-    font-size: 2em;
+    font-size: 2.65em;
     font-weight: 1000;
+  }
+
+  .submenu {
+    display: block;
+    font-size: 1em;
+    text-align: left;
+
   }
 
   .blog-title {
@@ -294,11 +313,6 @@ img {
     margin-left: 5px;
   }
 
-  .submenu {
-    display: block;
-    font-size: .5em;
-    text-align: center;
-  }
   .grid-container {
     grid-template-areas:
     'realness'
