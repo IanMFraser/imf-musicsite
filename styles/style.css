@@ -238,7 +238,7 @@ img {
 
 
 /* responsive design for screens larger than my laptop */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 769px) {
   .grid-container {
     grid-template-areas:
     'realness harlem kero1'
@@ -266,7 +266,7 @@ img {
   }
 }
 /* responsive design for screens smaller than my laptop */
-@media screen and (max-width:420px) {
+@media screen and (max-width:480px) {
 
   p,
   li {
