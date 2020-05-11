@@ -266,7 +266,7 @@ img {
   }
 }
 /* responsive design for screens smaller than my laptop */
-@media screen and (max-width:320px) {
+@media screen and (max-width:420px) {
 
   p,
   li {
