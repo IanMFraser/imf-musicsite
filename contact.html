@@ -14,7 +14,17 @@
 <body>
     <header id="nav-placeholder"></header>
     <div class="content fade-in one"">
-        <p>Contact me at: <a href="mailto:ian.fraserr@gmail.com">ian.fraserr@gmail.com</a></p>
+        <p>Contact me at: 
+            <!-- Joe Maller method for email protection: http://joemaller.com/js-mailer.shtml -->
+            <script TYPE="text/javascript">
+                emailE = 'gmail.com'
+                emailE = ('ian.fraserr' + '@' + emailE)
+                document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+            </script>
+            <noscript>
+                Email address protected by JavaScript
+            </noscript>
+        </p>
         <p class="media-icons">Check me out: <a href="https://github.com/IanMFraser" class="fa fa-github" target="_blank"></a> <a href="https://twitter.com/im_fraser" class="fa fa-twitter" target="_blank"></a> <a href="https://www.instagram.com/imfraser/" class="fa fa-instagram" target="_blank"></a> <a href="https://ianmfraser.bandcamp.com/" class="fa fa-bandcamp" target="_blank"></a></p>
     </div>
     <footer class="footer"><p>© Ian M Fraser 2019</p></footer>
