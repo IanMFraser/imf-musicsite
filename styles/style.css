@@ -145,7 +145,7 @@ iframe {
 .grid-container {
   display: grid;
   transition: all 0.5s;
-  grid-template-rows: 400px 400px 400px;
+  grid-template-rows: 400px 400px;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 20px;
   grid-template-areas: 
