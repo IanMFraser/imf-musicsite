@@ -1,5 +1,5 @@
 # imf-musicsite
-This is a site I created for my music projects. The main page is where people can find information about upcoming releases and performances, as well as information of my previously released works. 
+This is a site I created for my music. The main page is where people can find information about upcoming releases and performances. The "computer music" page is where you can find information about my various releases with audio examples linked from bandcamp. The contact page is for information about myself and how to contact me. 
 
 You can visit the site here: https://ianmfraser.github.io/imf-musicsite/
 
