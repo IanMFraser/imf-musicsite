@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/../styles/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>IMF | Contact</title>
+</head>
+  
+<body>
+    <header id="nav-placeholder"></header>
+    <main class="content fade-in one"">
+        <section class="about-content">
+            <p>
+                <img src="../images/imf_pecos15.png" alt="imf_pecos">
+            </p>
+            <p class="bio">
+                Ian M Fraser (b. 1980) is a composer working in the field of computer music. 
+                He lives in New York City with his wife and cat.
+            </p>
+        </section>
+        <section class="contact">
+        <p>Contact me at: 
+            <!-- Joe Maller method for email protection: http://joemaller.com/js-mailer.shtml -->
+            <script TYPE="text/javascript">
+                emailE = 'gmail.com'
+                emailE = ('ian.fraserr' + '@' + emailE)
+                document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+            </script>
+            <noscript>
+                Email address protected by JavaScript
+            </noscript>
+        </p>
+        <p class="media-icons">Check me out: <a href="https://github.com/IanMFraser" class="fa fa-github" target="_blank"></a> <a href="https://twitter.com/im_fraser" class="fa fa-twitter" target="_blank"></a> <a href="https://www.instagram.com/imfraser/" class="fa fa-instagram" target="_blank"></a> <a href="https://ianmfraser.bandcamp.com/" class="fa fa-bandcamp" target="_blank"></a></p>
+        </section>
+    </main>
+    <footer id="footer-placeholder"></footer>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/../navigation.html");
+        });
+        $(function(){
+          $("#footer-placeholder").load("/../footer.html");
+        });
+    </script>
+</body>
+</html>
