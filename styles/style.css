@@ -288,6 +288,7 @@ iframe {
 /* responsive design for screens smaller than my laptop */
 @media screen and (max-width:480px) {
 
+
   p,
   li {
     margin-bottom: 1.5em;
@@ -298,6 +299,16 @@ iframe {
     width: 100%
   }
   
+  .navigation {
+    padding-left: 15px
+  }
+  .box p {
+    padding: 0;
+  }
+
+  .cm-title {
+    margin: 30px;
+  }
   .name {
     font-size: 2.5em;
     font-weight: 1000;
@@ -313,7 +324,7 @@ iframe {
   .blog-title {
     font-size: 1.5em;
     margin-bottom: 0px;
-    margin-left:5px;
+    margin-left:0px;
   }
 
   .blog-image {
