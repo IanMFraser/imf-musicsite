@@ -1,0 +1,26 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact {
+    padding: 2em 0 2em 8em;
+}
+
+.contactImage {
+    width: 315px;
+    height: 228px;
+}
+
+.contactBio {
+    margin-top: 4em;
+    max-width: 50%;
+}
+
+.contactEmail {
+    margin-top: 2em;
+}
+
+.contactEmail a {
+    cursor: pointer;
+}

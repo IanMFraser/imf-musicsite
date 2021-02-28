@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.home {
+    margin: .5em 2em;
+}
+
+.newsImage {
+    width: 280px;
+    height: 280px;
+    margin-top: 2em;
+} 
+
+@media only screen and (min-width: 650px ){
+    .home {
+        margin: .5em 0 0 8em;
+    }
+}

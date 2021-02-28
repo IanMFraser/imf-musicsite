@@ -1,0 +1,22 @@
+li {
+    margin: 1.25em 0;
+}
+
+.oldNews {
+    margin-top: 4em;
+    max-width: 100%;
+}
+.oldNewsLink {
+    color: fuchsia;
+    text-decoration: none;
+}
+
+.oldNewsLink:visited {
+    color: fuchsia;
+}
+
+@media only screen and (min-width: 650px) {
+    .oldNews {
+        max-width: 75%;
+    }
+}
