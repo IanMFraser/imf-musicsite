@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
@@ -8,6 +8,11 @@ import Footer from './components/Footer.js'
 import './App.css';
 
 const App = () => {
+
+  useEffect(() => {
+    document.title="IMF"
+  }, [])
+
   return (
     <Router>
       <div className="App">
