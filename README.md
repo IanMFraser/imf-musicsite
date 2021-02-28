@@ -5,8 +5,8 @@ You can visit the site here: https://ianmfraser.github.io/imf-musicsite/
 
 ## screenshots 
 **main page**
-![main page](./markdown-images/main.png)
+![main page](./oldsite/markdown-images/main.png)
 **music page**
-![music page](/markdown-images/music.png)
+![music page](./oldsite/markdown-images/music.png)
 **contact page**
-![contact page](/markdown-images/contact.png)
+![contact page](./oldsite/markdown-images/contact.png)
