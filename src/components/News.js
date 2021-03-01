@@ -13,7 +13,7 @@ const News = () => {
                 <h2>{currentNews.title}</h2>
             </div>
             <div className="newsDate">{currentNews.date} 
-                <span className="newsCatagory">Catagory: {currentNews.catagory}</span>
+                <span className="newsCategory">Category: {currentNews.category}</span>
             </div>
             <div className="newsImage">
                 <img src={currentNews.images} alt={currentNews.alt}></img>
