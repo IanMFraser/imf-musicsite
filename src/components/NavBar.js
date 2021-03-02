@@ -8,15 +8,15 @@ const NavBar = () => {
         <nav className={styles.navigation}>
           <ul className={styles.mainMenu}>
               <li className={styles.logo}>
-                <Link to="/">IAN M FRASER</Link>
+                <Link to="/music">IAN M FRASER</Link>
               </li>
               <li>
                 <ul className={styles.subMenu}>
                   <li>
-                    <Link className={styles.hvrSweepToRight} to="/music">MUSIC</Link>
+                    <Link className={styles.hvrSweepToRight} to="/music/albums">MUSIC</Link>
                   </li>
                   <li>
-                    <Link className={styles.hvrSweepToRight} to="/contact">CONTACT</Link>
+                    <Link className={styles.hvrSweepToRight} to="/music/contact">CONTACT</Link>
                   </li>
                 </ul>
               </li>
