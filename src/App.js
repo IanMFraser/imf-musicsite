@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
 import Contact from './components/Contact.js';
@@ -14,7 +14,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
         <NavBar />
         <Switch>
@@ -24,16 +24,16 @@ const App = () => {
           <Route path="/music/contact">
             <Contact/>  
           </Route>
-          <Route path={["/music"]}>
+          <Route path="/music">
             <Home />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Redirect to="/music"/>
           </Route>
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
