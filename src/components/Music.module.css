@@ -10,9 +10,8 @@ img {
 }
 
 .music {
-    margin: 2em 0 2em 8em;
-    max-width: 80%;
-    width: 100vw;
+    margin: 2em;
+    max-width: 100%;
 }
 
 .albumGrid {
@@ -23,10 +22,21 @@ img {
 
 .albumCover {
     display: block;
-    max-width: 320px;
-    height: 320px;
+    max-width: 220px;
+    height: 220px;
 }
 
+@media only screen and (min-width: 650px) {
+    .music {
+        margin: 2em 0 2em 8em;
+        max-width: 80%;
+    }
+
+    .albumCover {
+        max-width: 320px;
+        height: 320px;
+    }
+}
 @media only screen and (min-width: 1850px) {
     .music {
         max-width: 65%;

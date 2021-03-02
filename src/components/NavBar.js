@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css'
+import styles from './NavBar.module.css'
 
 const NavBar = () => {
+
     return(
-        <nav className="navigation">
-          <ul className="mainMenu">
-              <li className="logo">
+        <nav className={styles.navigation}>
+          <ul className={styles.mainMenu}>
+              <li className={styles.logo}>
                 <Link to="/">IAN M FRASER</Link>
               </li>
               <li>
-                <ul className="subMenu">
+                <ul className={styles.subMenu}>
                   <li>
-                    <Link to="/music">MUSIC</Link>
+                    <Link className={styles.hvrSweepToRight} to="/music">MUSIC</Link>
                   </li>
                   <li>
-                    <Link to="/contact">CONTACT</Link>
+                    <Link className={styles.hvrSweepToRight} to="/contact">CONTACT</Link>
                   </li>
                 </ul>
               </li>

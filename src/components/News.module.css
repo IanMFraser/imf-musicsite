@@ -1,3 +1,8 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .newsTitle{
     margin-top: 1.15em;
 }
@@ -10,7 +15,12 @@
 
 .newsCategory {
     font-size: 0.8em;
-    font-weight: 700
+    font-weight: 700;
+}
+
+.newsImage {
+    width: 250px;
+    height: 250px;
 }
 
 .newsContent {
@@ -21,5 +31,10 @@
 @media only screen and (min-width: 650px) {
     .newsContent {
         max-width:65%;
+    }
+
+    .newsImage {
+        width: 320px;
+        height: 320px;
     }
 }

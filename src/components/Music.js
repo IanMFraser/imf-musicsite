@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
 import Album from './Album.js'
-import './Music.css';
+import styles from './Music.module.css';
 import data from '../data.json'
 
 const Music = () => {
@@ -10,15 +10,15 @@ const Music = () => {
     const albums = data.albums;
     
     return(
-        <main className="music">
+        <main className={styles.music}>
             <Switch>
                 <Route exact path={path}>
                     <h1>Computer Music</h1>
-                    <div className="albumGrid">
+                    <div className={styles.albumGrid}>
                         {
                             albums.map(a => {
                                 return <Link key={`${a.id}`} to={`${url}/${a.id}`}>
-                                            <span className="albumCover">
+                                            <span className={styles.albumCover}>
                                                 <img src={a.artwork} alt={`${a.id} artwork`}/>
                                             </span>
                                         </Link>})
