@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { HashRouter, BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
@@ -8,13 +8,8 @@ import Footer from './components/Footer.js'
 import './App.css';
 
 const App = () => {
-
-  useEffect(() => {
-    document.title="IMF"
-  }, [])
-
   return (
-    <HashRouter basename="/">
+    <Router>
       <div className="App">
         <NavBar />
         <Switch>
@@ -27,13 +22,13 @@ const App = () => {
           <Route path="/music">
             <Home />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Redirect to="/music"/>
           </Route>
         </Switch>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 

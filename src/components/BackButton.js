@@ -7,7 +7,7 @@ const BackButton = () => {
     let history = useHistory()
 
     const onClickHandler = () => {
-        history.push('/music/albums')
+        history.push('/music/albums ')
     }
     return(
         <>
