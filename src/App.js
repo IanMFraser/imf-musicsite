@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
 import Contact from './components/Contact.js';
@@ -9,7 +9,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router basename="/music">
+    <HashRouter basename="/">
       <div className="App">
         <NavBar />
         <Switch>
@@ -28,7 +28,7 @@ const App = () => {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
