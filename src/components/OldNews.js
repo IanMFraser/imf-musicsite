@@ -5,7 +5,7 @@ import classNames from 'classnames'
 
 const OldNews = () => {
     const oldNews = data.news.oldNews
-    const linkClassNames = classNames(styles.oldNewsLink, styles.hvrSweepToRight)
+    const linkClassNames = classNames(styles.oldNewsLink, styles.hvrBounceIn)
 
     return(
         <div className={styles.oldNews}>

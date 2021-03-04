@@ -23,6 +23,12 @@ img {
 
 .contactEmail a {
     cursor: pointer;
+    color: #FF5858;
+}
+
+.contactEmail a:hover {
+    cursor: pointer;
+    color: #FFB2B2;
 }
 
 @media only screen and (min-width: 650px) {

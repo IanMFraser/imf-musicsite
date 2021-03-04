@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from'./News.module.css'
 import data from '../data.json'
+import classNames from 'classnames'
 
 const News = () => {
 
     const currentNews = data.news.currentNews
+    const linkClassNames = classNames(styles.newsLink, styles.hvrBounceIn)
 
     return(
         <div className={styles.news}>
@@ -19,7 +21,7 @@ const News = () => {
                 <img src={currentNews.images} alt={currentNews.alt}></img>
             </div>
             <div className={styles.newsContent}>
-                {`${currentNews.content}`} {currentNews.link && <a className={styles.oldNewsLink} href={currentNews.link} target="_blank" rel="noreferrer">{ '>>'} </a>}
+                {`${currentNews.content}`} {currentNews.link && <a className={linkClassNames} href={currentNews.link} target="_blank" rel="noreferrer">{ '>>'} </a>}
             </div>
         </div>
     )
