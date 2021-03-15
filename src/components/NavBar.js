@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.css'
+import SubMenu from './SubMenu.js';
+import HamburgerMenu from 'react-hamburger-menu'
+import styles from './NavBar.module.css';
+import subMenuStyles from './SubMenu.module.css'
 
 const NavBar = () => {
+    const [clicked, setClicked] = useState(false)
+
+    const onClickHandler = () => {
+      const subMenu = document.querySelector(`.${subMenuStyles.subMenu}`)
+      setClicked(!clicked)
+      if(!clicked || subMenu.style.display === '') {
+        subMenu.style.display = 'flex'
+      } else {
+        subMenu.style.display = 'none'
+      }
+    }
 
     return(
         <nav className={styles.navigation}>
@@ -11,14 +25,10 @@ const NavBar = () => {
                 <Link to="/music">IAN M FRASER</Link>
               </li>
               <li>
-                <ul className={styles.subMenu}>
-                  <li>
-                    <Link className={styles.hvrSweepToRight} to="/music/albums">MUSIC</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.hvrSweepToRight} to="/music/contact">CONTACT</Link>
-                  </li>
-                </ul>
+                <SubMenu />
+              </li>
+              <li>
+                <HamburgerMenu className={styles.hamburger} isOpen={clicked} menuClicked={onClickHandler} width={18} height={15}/>
               </li>
           </ul>
         </nav>
