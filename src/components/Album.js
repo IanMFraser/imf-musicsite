@@ -21,7 +21,7 @@ const Album = ({albums}) => {
                 </ol>
             </div>
             <div className={styles.albumDescription}>
-                <p>{album[0].description}</p>
+                {album[0].description.length > 0 && album[0].description.map((d, i) => <p key={i}>{d}</p>)}
             </div>
             <br/>
             <div className={styles.albumCredits}>

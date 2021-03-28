@@ -1,12 +1,21 @@
+.album {
+    max-width:100%;
+}
+
+.mediaContainer {
+    margin-top: 2em;
+}
+
 .tracklist ol {
     margin: 2em;
 }
-.albumDescription {
-    max-width: 90%;
-}
 
 @media only screen and (min-width: 650px){
+    .album {
+        max-width: 65%;
+    }
+
     .albumDescription {
-        max-width: 60%;
+        max-width: 100%;
     }
 }
