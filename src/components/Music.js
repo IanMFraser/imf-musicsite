@@ -17,11 +17,16 @@ const Music = () => {
                     <div className={styles.albumGrid}>
                         {
                             albums.map(a => {
-                                return <Link key={`${a.id}`} to={`${url}/${a.id}`}>
-                                            <span className={styles.albumCover}>
-                                                <img src={a.artwork} alt={`${a.id} artwork`}/>
-                                            </span>
-                                        </Link>})
+                                return <div key={`${a.id}`} className={styles.album}>
+                                            <Link to={`${url}/${a.id}`}>
+                                              <div className={styles.hoverText}>
+                                                    {a.title}
+                                                </div>
+                                                <span className={styles.albumCover}>
+                                                    <img src={a.artwork} alt={`${a.id} artwork`}/>
+                                                </span>
+                                            </Link>
+                                        </div>})
                         }
                     </div>
                 </Route>
