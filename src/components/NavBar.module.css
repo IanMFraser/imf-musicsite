@@ -42,8 +42,9 @@ ul {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 900;
+  font-style: italic;
 }
 
 .logo li {
