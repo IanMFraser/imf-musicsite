@@ -70,6 +70,17 @@
     },
     "albums" : [
         {
+            "id": "berserker",
+            "artist": "Ian M Fraser",
+            "title": "Berserker",
+            "artwork": "",
+            "tracklist": ["Zoning Out", "Hitting The Wall", "Interlude To Death", "The Cannibal", "Hard Work and Guts"],
+            "description": ["Composed by Ian M Fraser using nonlinear feedback systems and waveset synthesis"],
+            "credits": ["Edited using Sensorimotor Primitives Auditory Perception Software by Jetpack Cognition Lab", "Mastered by Roc Jimènez De Cisneros", "S/O Christian, Joe, Oswald, Roc, Philly crew PLAY LOUD!"],
+            "iframeSrc": "",
+            "mediaLink": ""
+        },
+        {
             "id": "realness",
             "artist": "IMF",
             "title": "The Realness",
@@ -120,7 +131,7 @@
             "artwork": "https://storage.googleapis.com/album-images/lateral.jpg",
             "tracklist": ["The Trajectory Toward Which All Other Trajectories Converge"],
             "description":["\"To understand the trajectories of the stars through a galaxy, Michel Hénon computed the intersections of an orbit with a plane. The resulting patterns depended on the system’s total energy. The points from a stable orbit gradually produced a continuous, connected curve. Other energy levels, however, produced complicated mixtures of stability and chaos, represented by regions of scattered points. […]", "The nested detail, lines within lines, can be seen in final form in a series of pictures with progressively greater magnification. But the eerie effect of the strange attractor can be appreciated another way when the shape emerges in time, point by point. It appears like a ghost out of the mist. New points scatter so randomly across the screen that it seems incredible that any structure is there, let alone a structure so intricate and fine. Any two consecutive points are arbitrarily far apart, just like any two points initially nearby in a turbulent flow. Given any number of points, it is impossible to guess where the next will appear—except, of course, that it will be somewhere on the attractor.","The points wander so randomly, the pattern appears so ethereally, that it is hard to remember that the shape is an attractor. It is not just any trajectory of a dynamical system. It is the trajectory toward which all other trajectories converge. That is why the choice of starting conditions does not matter. As long as the starting point lies somewhere near the attractor, the next few points will converge to the attractor with great rapidity.\"", "From Chaos: Making A New Science by James Gleick (pgs. 148-150)", "The track is a collection of études whose content is entirely derived from sonification of the Hénon Map and a sound file of the Chaos: Making A New Science AAX format audiobook interpreted as raw audio data.", "Realized in real time without any human interference, each étude is the diffusion of a single variation of a compact patch coded by Fraser & Rosenberg in Supercollider in which the chaotic sonifications modulate various parameters regulating the playback of the raw data sound file. The études were sequenced in Audacity, each separated by a period of silence. All software utilized in the piece is free and open source.", "– RER & IMF"],
-            "credits": [],
+            "credits": ["Originally released on Lateral Addition"],
             "iframeSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77890969&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
             "mediaLink": "https://soundcloud.com/lateral-addition/trajectory"
         },

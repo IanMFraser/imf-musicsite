@@ -8,7 +8,7 @@ const Music = () => {
 
     let { path, url } = useRouteMatch();
     const albums = data.albums;
-    
+    const placeholderUrl = "https://via.placeholder.com/320"
     return(
         <main className={styles.music}>
             <Switch>
@@ -19,14 +19,16 @@ const Music = () => {
                             albums.map(a => {
                                 return <div key={`${a.id}`} className={styles.album}>
                                             <Link to={`${url}/${a.id}`}>
-                                              <div className={styles.hoverText}>
+                                                <div className={styles.hoverText}>
                                                     {a.title}
                                                 </div>
                                                 <span className={styles.albumCover}>
-                                                    <img src={a.artwork} alt={`${a.id} artwork`}/>
+                                                    {a.artwork ? <img src={a.artwork} alt={`${a.id} artwork`}/> : <img src={placeholderUrl} alt={`${a.id} artwork`}/>}
                                                 </span>
                                             </Link>
-                                        </div>})
+                                        </div>
+                                        }
+                                    )
                         }
                     </div>
                 </Route>
