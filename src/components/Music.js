@@ -8,7 +8,8 @@ const Music = () => {
 
     let { path, url } = useRouteMatch();
     const albums = data.albums;
-    const placeholderUrl = "https://via.placeholder.com/320"
+    const placeholderUrl = "https://via.placeholder.com/320";
+
     return(
         <main className={styles.music}>
             <Switch>

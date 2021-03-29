@@ -57,8 +57,13 @@ img {
   
 
 @media only screen and (min-width: 650px) {
+
+    .news {
+        margin-top: 2em;
+    }
+
     .newsContent {
-        max-width:65%;
+        max-width: 65%;
     }
 
     .newsImage {
