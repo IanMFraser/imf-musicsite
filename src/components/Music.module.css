@@ -10,13 +10,21 @@ img {
 }
 
 .music {
+    display: flex;
+    flex-direction: column;
     margin-left: 2em;
     max-width: 100%;
+}
+
+.music h1 {
+    font-size: 1.75em;
 }
 
 .albumGrid {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     padding: 2em 0 2em 0;
 }
 
@@ -52,8 +60,13 @@ img {
     .music {
         margin: 2em 0 2em 8em;
         max-width: 80%;
+        align-items: baseline;
     }
 
+    .albumGrid {
+        flex-direction: row;
+    }
+    
     .albumCover {
         max-width: 320px;
         height: 320px;

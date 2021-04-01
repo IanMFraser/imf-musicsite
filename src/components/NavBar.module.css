@@ -42,8 +42,20 @@ ul {
 
 .logo {
   font-size: 2em;
-  font-weight: 900;
+  font-weight: 500;
   font-style: italic;
+}
+
+.logo:hover {
+  text-shadow:
+  -.75px -.75px 0 black,
+  .75px -.75px 0 black,
+  -.75px .75px 0 black,
+  .75px .75px 0 black;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .logo li {

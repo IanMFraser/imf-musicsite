@@ -10,7 +10,7 @@ const News = () => {
 
     return(
         <div className={styles.news}>
-            <h1>NEWS</h1>
+            <h1 className={styles.newsHeader}>News</h1>
             <div className={styles.newsTitle}>
                 <h2>{currentNews.title}</h2>
             </div>

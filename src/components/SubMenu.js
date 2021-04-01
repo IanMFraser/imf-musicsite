@@ -8,10 +8,10 @@ const SubMenu = () => {
         <>
             <ul className={styles.subMenu}>
                 <li>
-                    <Link className={styles.hvrSweepToRight} to="/music/albums">MUSIC</Link>
+                    <Link to="/music/albums">MUSIC</Link>
                 </li>
                 <li>
-                    <Link className={styles.hvrSweepToRight} to="/music/contact">CONTACT</Link>
+                    <Link to="/music/contact">CONTACT</Link>
                 </li>
             </ul>
         </>
