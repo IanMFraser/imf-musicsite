@@ -19,10 +19,10 @@
     .75px -.75px 0 black,
     -.75px .75px 0 black,
     .75px .75px 0 black;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
   
 .subMenu a {
