@@ -11,7 +11,7 @@ const Album = ({albums}) => {
         <div className={styles.album}>
             <h2>{`${album[0].artist} - ${album[0].title}`}</h2>
             <div className={styles.mediaContainer}>
-                { album[0].iframe ? <iframe title={album[0].id} style={{border: "0", width: "350px", height: "350px"}} src={album[0].iframeSrc}>
+                { album[0].iframeSrc ? <iframe title={album[0].id} style={{border: "0", width: "350px", height: "350px"}} src={album[0].iframeSrc}>
                     <a href={album[0].mediaLink}>{`${album[0].title} by ${album[0].artist}`}</a>
                 </iframe> : <img src={album[0].artwork} alt={`${album[0].title} artwork`} style={{width: '320px'}}/> }
             </div>
