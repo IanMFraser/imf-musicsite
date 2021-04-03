@@ -4,7 +4,7 @@ img {
 }
 
 .contact {
-    padding: 2em;
+    padding: 2rem;
 }
 
 .contactImage {
@@ -13,12 +13,12 @@ img {
 }
 
 .contactBio {
-    margin-top: 4em;
+    margin-top: 4rem;
     max-width: 95%;
 }
 
 .contactEmail {
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .contactEmail a {
@@ -33,7 +33,7 @@ img {
 
 @media only screen and (min-width: 650px) {
     .contact {
-        padding: 2em 0 2em 8em;
+        padding: 2rem 0 2rem 8rem;
     }
 
     .contactBio {

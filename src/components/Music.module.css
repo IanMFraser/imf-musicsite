@@ -12,12 +12,12 @@ img {
 .music {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    margin-left: 2rem;
     max-width: 100%;
 }
 
 .music h1 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 
 .albumGrid {
@@ -25,11 +25,11 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 2em 0 2em 0;
+    padding: 2rem 0 2rem 0;
 }
 
 .album {
-    margin: 0 2em 0 0;
+    margin: 0 2rem 0 0;
     position: relative;
 }
 
@@ -41,7 +41,7 @@ img {
     width: 100%;
     height: 320px;
     background-color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 15%;
 }
 
@@ -58,7 +58,7 @@ img {
 
 @media only screen and (min-width: 650px) {
     .music {
-        margin: 2em 0 2em 8em;
+        margin: 2rem 0 2rem 8rem;
         max-width: 80%;
         align-items: baseline;
     }

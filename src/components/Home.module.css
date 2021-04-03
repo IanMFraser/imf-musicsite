@@ -4,17 +4,17 @@ img {
 }
 
 .home {
-    margin: .5em 2em;
+    margin: .5rem 2rem;
 }
 
 .newsImage {
     width: 280px;
     height: 280px;
-    margin-top: 2em;
+    margin-top: 2rem;
 } 
 
 @media only screen and (min-width: 650px ){
     .home {
-        margin: .5em 0 0 8em;
+        margin: .5rem 0 0 8rem;
     }
 }
