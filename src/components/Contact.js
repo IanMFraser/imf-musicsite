@@ -9,7 +9,7 @@ const Contact = () => {
                     <img src="https://storage.googleapis.com/album-images/imf_pecos.jpg" alt="imf performing at trans pecos"></img>
                 </div>
                 <p className={styles.contactBio}>
-                    Ian M Fraser (b. 1980) is a composer working in the field of computer music.
+                    Ian M Fraser (b. 1980) is a composer working in the field of computer music. His work primarily focuses on generative structures, stochastic processes, and nonlinear feedback systems.
                     He lives in New York City with his wife and cat.
                 </p>
             </div>
