@@ -8,8 +8,8 @@ img {
 }
 
 .contactImage {
-    width: 315px;
-    height: 228px;
+    width: 300px;
+    height: 200px;
 }
 
 .contactBio {
@@ -31,12 +31,17 @@ img {
     color: #FFB2B2;
 }
 
+.photoCredit {
+    font-size: .65rem;
+    margin-left: .5rem;
+}
+
 @media only screen and (min-width: 650px) {
     .contact {
         padding: 2rem 0 2rem 8rem;
     }
 
     .contactBio {
-        max-width:50%;
+        max-width: 50%;
     }
 }

@@ -5,9 +5,10 @@ const Contact = () => {
     return(
         <div className={styles.contact}>
             <div className={styles.contactAbout}>
-                <div className={styles.contactImage}>
-                    <img src="https://storage.googleapis.com/album-images/imf_pecos.jpg" alt="imf performing at trans pecos"></img>
-                </div>
+                <figure className={styles.contactImage}>
+                    <img src="https://storage.googleapis.com/album-images/IanFraser_TransPecos-20150805-04317.jpeg" alt="imf performing at trans pecos"></img>
+                    <figcaption><span className={styles.photoCredit}>Photo by Billy Gomberg</span></figcaption>
+                </figure>
                 <p className={styles.contactBio}>
                     Ian M Fraser (b. 1980) is a composer working in the field of computer music. His work primarily focuses on generative structures, stochastic processes, and nonlinear feedback systems.
                     He lives in New York City with his wife and cat.
