@@ -9,7 +9,7 @@ const NavBar = () => {
       <>
         <Navbar expand="lg" collapseOnSelect className="mt-4">
           <Container className="ml-2">
-            <Navbar.Brand href="/music" style={{fontSize: '2em'}} className="m-2">Ian M Fraser</Navbar.Brand>
+            <Navbar.Brand href="/music" style={{fontSize: '2em', fontWeight: '500',fontStyle: 'italic'}} className="m-2">IAN M FRASER</Navbar.Brand>
             <Navbar.Toggle aria-controls="imf-navbar-nav" />
             <Navbar.Collapse id="imf-navbar-nav">
               <Nav as="ul" className="justify-content-start ml-2">
