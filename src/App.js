@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router basename="/">
       <div className="App">
-        <Container>
+        <Container fluid>
           <NavBar />
           <Switch>
             <Route path="/music/albums">
