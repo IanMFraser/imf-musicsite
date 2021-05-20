@@ -1,37 +1,29 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import SubMenu from './SubMenu.js';
-import HamburgerMenu from 'react-hamburger-menu'
-import styles from './NavBar.module.css';
-import subMenuStyles from './SubMenu.module.css'
+import React from 'react';
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/NavBar'
+import Nav from 'react-bootstrap/Nav'
 
 const NavBar = () => {
-    const [clicked, setClicked] = useState(false)
-
-    const onClickHandler = () => {
-      const subMenu = document.querySelector(`.${subMenuStyles.subMenu}`)
-      setClicked(!clicked)
-      if(!clicked || subMenu.style.display === '') {
-        subMenu.style.display = 'flex'
-      } else {
-        subMenu.style.display = 'none'
-      }
-    }
 
     return(
-        <nav className={styles.navigation}>
-          <ul className={styles.mainMenu}>
-              <li className={styles.logo}>
-                <Link to="/music">IAN M FRASER</Link>
-              </li>
-              <li>
-                <SubMenu />
-              </li>
-              <li>
-                <HamburgerMenu className={styles.hamburger} isOpen={clicked} menuClicked={onClickHandler} width={18} height={15}/>
-              </li>
-          </ul>
-        </nav>
+      <>
+        <Navbar expand="lg" collapseOnSelect className="mt-4">
+          <Container className="ml-2">
+            <Navbar.Brand href="/music" style={{fontSize: '2em'}} className="m-2">Ian M Fraser</Navbar.Brand>
+            <Navbar.Toggle aria-controls="imf-navbar-nav" />
+            <Navbar.Collapse id="imf-navbar-nav">
+              <Nav as="ul" className="justify-content-start ml-2">
+                <Nav.Item as="li" className="m-0">
+                  <Nav.Link href="/music/albums" className="m-0 mt-2">MUSIC</Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li" className="m-0">
+                    <Nav.Link href="/music/contact" className="m-0 mt-2">CONTACT</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        </>
     )
 }
 

@@ -15,6 +15,6 @@ img {
 
 @media only screen and (min-width: 650px ){
     .home {
-        margin: .5rem 0 0 8rem;
+        margin: .5rem 0 0 3rem;
     }
 }
