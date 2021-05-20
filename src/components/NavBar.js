@@ -10,14 +10,14 @@ const NavBar = () => {
         <Navbar expand="lg" collapseOnSelect className="mt-4">
           <Container className="ml-2">
             <Navbar.Brand href="/music" style={{fontSize: '2em', fontWeight: '500',fontStyle: 'italic'}} className="m-2">IAN M FRASER</Navbar.Brand>
-            <Navbar.Toggle aria-controls="imf-navbar-nav" />
+            <Navbar.Toggle aria-controls="imf-navbar-nav" style={{border:'none'}} />
             <Navbar.Collapse id="imf-navbar-nav">
-              <Nav as="ul" className="justify-content-start ml-2">
-                <Nav.Item as="li" className="m-0">
-                  <Nav.Link href="/music/albums" className="m-0 mt-2">MUSIC</Nav.Link>
+              <Nav as="ul" className="justify-content-start ml-2 flex-row">
+                <Nav.Item as="li" className="m-1">
+                  <Nav.Link href="/music/albums" className="m-0">MUSIC</Nav.Link>
                 </Nav.Item>
-                <Nav.Item as="li" className="m-0">
-                    <Nav.Link href="/music/contact" className="m-0 mt-2">CONTACT</Nav.Link>
+                <Nav.Item as="li" className="m-1">
+                    <Nav.Link href="/music/contact" className="m-0">CONTACT</Nav.Link>
                 </Nav.Item>
               </Nav>
               </Navbar.Collapse>
