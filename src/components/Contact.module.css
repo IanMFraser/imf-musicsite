@@ -38,7 +38,7 @@ img {
 
 @media only screen and (min-width: 650px) {
     .contact {
-        padding: 2rem 0 2rem 8rem;
+        padding: 2rem 0 2rem 3rem;
     }
 
     .contactBio {
