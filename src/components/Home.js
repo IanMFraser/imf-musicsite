@@ -1,13 +1,15 @@
 import React from 'react';
 import News from './News.js'
 import OldNews from './OldNews.js'
-import styles from './Home.module.css';
+import Container from 'react-bootstrap/Container'
 
 const Home = () => {
     return(
-        <main className={styles.home}>
-            <News />
-            <OldNews />
+        <main >
+            <Container className="m-4">
+                <News />
+                <OldNews />
+            </Container>
         </main>
     )
 }
