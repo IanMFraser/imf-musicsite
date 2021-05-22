@@ -9,8 +9,8 @@ const NavBar = () => {
       <>
         <Navbar expand="lg" collapseOnSelect className="my-4">
           <Container className="ml-2">
-            <Navbar.Brand href="/music" style={{fontSize: '2em', fontWeight: '500',fontStyle: 'italic'}} className="my-2">IAN M FRASER</Navbar.Brand>
-            <Navbar.Toggle aria-controls="imf-navbar-nav" style={{border:'none'}} />
+            <Navbar.Brand href="/music" className="my-2 font-italic font-weight-bold">IAN M FRASER</Navbar.Brand>
+            <Navbar.Toggle aria-controls="imf-navbar-nav" className="border-0" />
             <Navbar.Collapse id="imf-navbar-nav">
               <Nav as="ul" className="justify-content-start ml-2 flex-row">
                 <Nav.Item as="li" className="m-1">
