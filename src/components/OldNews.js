@@ -12,7 +12,7 @@ const OldNews = () => {
         <ListGroup variant="flush" as="ul">
             <h2 className="m-3">OLD NEWS</h2>
                 {
-                    oldNews.map((n) => <ListGroup.Item key={n.id} style={{backgroundColor: '#f8f8f8'}} as="li"><strong>{`${n.date} ${n.category}`}</strong>{ ` ${n.content}`} { n.link && <a className={linkClassNames} href={n.link} target="_blank" rel="noreferrer">{ '>>'} </a>} </ListGroup.Item>)
+                    oldNews.map((n) => <ListGroup.Item key={n.id} style={{backgroundColor: '#f8f8f8'}} as="li" className="mt-4"><strong>{`${n.date} ${n.category}`}</strong>{ ` ${n.content}`} { n.link && <a className={linkClassNames} href={n.link} target="_blank" rel="noreferrer">{ '>>'} </a>} </ListGroup.Item>)
                 }
         </ListGroup>
     )
