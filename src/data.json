@@ -14,6 +14,7 @@
                 "id": "8",
                 "date": "January 1, 2021",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "New track \"Sowing and Reaping\" on Superpang compilation, \"Tour Mode\"",
                 "link": "https://superpang.bandcamp.com/album/tour-mode"
             },
@@ -21,6 +22,7 @@
                 "id": "7",
                 "date": "June 19, 2020",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "Five Sketches For JMY out now on Building A Better Reality compilation",
                 "link": "https://jmymusic.bandcamp.com/album/building-a-better-reality-a-benefit-compilation"
             },
@@ -28,6 +30,7 @@
                 "id":"6",
                 "date": "May 10, 2020",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "New track Surround Reapir out now on Pulsar.scramble ($ pwgen 20)! Incremental compilation featuring computer music composed with pulsar synthesis.",
                 "link": "https://pwgen20.bandcamp.com/album/pulsar-scramble"
             },
@@ -35,6 +38,7 @@
                 "id": "5",
                 "date": "Nov 4, 2019",
                 "category": "PERFORMANCE",
+                "categoryVariant": "success",
                 "content": "@ The Windjammer Brooklyn, NY: John Macedo + IMF, Luminous \"Diamond Ben\" Kudler, Lutkie, and Marcin Pietruszewski.",
                 "link": ""
             },
@@ -42,6 +46,7 @@
                 "id": "4",
                 "date": "Nov 2, 2019",
                 "category": "PERFORMANCE",
+                "categoryVariant": "success",
                 "content": "@ The Red Room Baltimore, MD: Diffusion Festival w/ Marcin Pietruszewski, Jessica Ekomane, and IMF.",
                 "link": "" 
             },
@@ -49,6 +54,7 @@
                 "id": "3",
                 "date": "May 14, 2019",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "\"Solo For Computer and Amplified Metal\" included on Function() Festival compilation.",
                 "link": "https://functionfestival.bandcamp.com/releases"   
             },
@@ -56,6 +62,7 @@
                 "id": "2",
                 "date": "Feb 12, 2019",
                 "category": "PERFORMANCE",
+                "categoryVariant": "success",
                 "content": "@ Vox Populi Gallery Philadelphia, PA: IMF, Ruben Patino, LXV, Reed Evan Rosenberg.",
                 "link": ""  
             },
@@ -63,6 +70,7 @@
                 "id": "1",
                 "date": "Dec 17, 2018",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "Ten short pulsar studies included on Hyperchaos Vol 1 released by Edvacm.",
                 "link": "https://edvacm.bandcamp.com/album/hyperchaos-volume-1"  
             },
@@ -70,6 +78,7 @@
                 "id": "0",
                 "date": "Dec 17, 2018",
                 "category": "RELEASE",
+                "categoryVariant": "info",
                 "content": "Keroaän \"Pulsars In Rhombus Form\" out now on Nada.",
                 "link": "https://nadarecs.bandcamp.com/album/pulsars-in-rhombus-form" 
             }
