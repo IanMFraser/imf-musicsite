@@ -13,15 +13,15 @@ const OldNews = () => {
             <ListGroup variant="flush" as="ul">
                     {
                         oldNews.map(news => {
-                            return <ListGroup.Item key={news.id} as="li" className="mt-4">
+                            return <ListGroup.Item key={news.id} as="li" className="mt-2 border-0">
                                 <strong>
                                     {`${news.date}`}
                                     <Badge variant={news.categoryVariant} className="mx-2">
                                         {news.category}
                                     </Badge>
                                 </strong>
-                                { ` ${news.content}`} 
-                                { news.link && <a className="newsLink hvrBounceIn" href={news.link} target="_blank" rel="noreferrer">{ '>>'} </a>} 
+                                { ` ${news.content} `} 
+                                { news.link && <a className="newsLink hvrBounceIn" href={news.link} target="_blank" rel="noreferrer">{ ' >>'} </a>} 
                             </ListGroup.Item>
                         })
                     }
