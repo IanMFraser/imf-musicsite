@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
 import Album from './Album.js'
+import Image from 'react-bootstrap/Image'
 import styles from './Music.module.css';
 import data from '../data.json'
 
@@ -12,9 +13,7 @@ const Music = () => {
 
     return(
         <main className={styles.music}>
-            <Switch>
-                <Route exact path={path}>
-                    <h1>Computer Music</h1>
+            <h1>Computer Music</h1>
                     <div className={styles.albumGrid}>
                         {
                             albums.map(a => {
@@ -24,7 +23,7 @@ const Music = () => {
                                                     {a.title}
                                                 </div>
                                                 <span className={styles.albumCover}>
-                                                    {a.artwork ? <img src={a.artwork} alt={`${a.id} artwork`}/> : <img src={placeholderUrl} alt={`${a.id} artwork`}/>}
+                                                    {a.artwork ? <Image src={a.artwork} alt={`${a.id} artwork`}/> : <Image src={placeholderUrl} alt={`${a.id} artwork`}/>}
                                                 </span>
                                             </Link>
                                         </div>
@@ -32,11 +31,6 @@ const Music = () => {
                                     )
                         }
                     </div>
-                </Route>
-                <Route path={`${path}/:albumId`}>
-                    <Album albums={albums}/>
-                </Route>
-            </Switch>
         </main>
     )
 }

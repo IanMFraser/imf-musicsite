@@ -9,6 +9,7 @@ const BackButton = () => {
     const onClickHandler = () => {
         history.push('/music/albums')
     }
+    
     return(
         <>
             <button className={styles.backButton} onClick={onClickHandler}> {'<-- Back'}</button>
