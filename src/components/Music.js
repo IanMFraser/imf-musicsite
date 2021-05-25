@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
+import Image from 'react-bootstrap/Image'
 import Album from './Album.js'
 import styles from './Music.module.css';
 import data from '../data.json'
@@ -24,12 +25,12 @@ const Music = () => {
                                                     {a.title}
                                                 </div>
                                                 <span className={styles.albumCover}>
-                                                    {a.artwork ? <img src={a.artwork} alt={`${a.id} artwork`}/> : <img src={placeholderUrl} alt={`${a.id} artwork`}/>}
+                                                    {a.artwork ? <Image src={a.artwork} alt={`${a.id} artwork`}/> : <Image src={placeholderUrl} alt={`${a.id} artwork`}/>}
                                                 </span>
                                             </Link>
                                         </div>
                                         }
-                                    )
+                            )
                         }
                     </div>
                 </Route>
