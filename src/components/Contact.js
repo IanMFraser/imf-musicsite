@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 
 const Contact = () => {
     return(
-        <Card className="border-0 ml-4">
+        <Card className="border-0 ml-5">
             <Card.Body>
                 <Figure>
                     <Figure.Image src="https://storage.googleapis.com/album-images/IanFraser_TransPecos-20150805-04317.jpeg" alt="imf performing at trans pecos"></Figure.Image>

@@ -58,7 +58,7 @@ img {
 
 @media only screen and (min-width: 650px) {
     .music {
-        margin: 2rem 0 2rem 3rem;
+        margin: 2rem 0 2rem 5rem;
         max-width: 80%;
         align-items: baseline;
     }

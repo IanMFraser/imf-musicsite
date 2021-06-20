@@ -8,7 +8,7 @@ const NavBar = () => {
     return(
       <>
         <Navbar expand="lg" collapseOnSelect className="my-4">
-          <Container className="ml-2">
+          <Container className="ml-5">
             <Navbar.Brand href="/music" className="my-2 font-italic font-weight-bold">IAN M FRASER</Navbar.Brand>
             <Navbar.Toggle aria-controls="imf-navbar-nav" className="border-0" />
             <Navbar.Collapse id="imf-navbar-nav">
