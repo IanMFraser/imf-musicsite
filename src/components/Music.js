@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
 import Album from './Album.js'
-import styles from './Music.module.css';
 import data from '../data.json'
 
 const Music = () => {
@@ -12,19 +11,19 @@ const Music = () => {
     const placeholderUrl = "https://via.placeholder.com/320";
 
     return(
-        <main className={styles.music}>
+        <main>
             <Switch>
                 <Route exact path={path}>
                     <h1>Computer Music</h1>
-                    <div className={styles.albumGrid}>
+                    <div>
                         {
                             albums.map(a => {
-                                return <div key={`${a.id}`} className={styles.album}>
+                                return <div key={`${a.id}`}>
                                             <Link to={`${url}/${a.id}`}>
-                                                <div className={styles.hoverText}>
+                                                <div>
                                                     {a.title}
                                                 </div>
-                                                <span className={styles.albumCover}>
+                                                <span>
                                                     {a.artwork ? <Image src={a.artwork} alt={`${a.id} artwork`}/> : <Image src={placeholderUrl} alt={`${a.id} artwork`}/>}
                                                 </span>
                                             </Link>

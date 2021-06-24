@@ -24,6 +24,26 @@ main>.container {
   padding:0;
 }
 
+.backButton {
+  font-family: 'Fira Code', monospace;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  text-shadow:
+  -.5px -.5px 0 black,
+  .5px -.5px 0 black,
+  -.5px .5px 0 black,
+  .5px .5px 0 black;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
 .card, .card-header, .card-footer {
   background-color: #f8f8f8;
 }
@@ -44,6 +64,9 @@ main>.container {
   font-size: .75rem;
 }
 
+.home {
+  margin-left: 3rem;
+}
 .list-group-item {
   background-color:#f8f8f8;
 }
