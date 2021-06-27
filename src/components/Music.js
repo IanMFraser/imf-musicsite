@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
 import Album from './Album.js'
-import styles from './Music.module.css';
 import data from '../data.json'
 
 const Music = () => {
@@ -12,27 +12,30 @@ const Music = () => {
     const placeholderUrl = "https://via.placeholder.com/320";
 
     return(
-        <main className={styles.music}>
+        <main>
             <Switch>
                 <Route exact path={path}>
-                    <h1>Computer Music</h1>
-                    <div className={styles.albumGrid}>
-                        {
-                            albums.map(a => {
-                                return <div key={`${a.id}`} className={styles.album}>
-                                            <Link to={`${url}/${a.id}`}>
-                                                <div className={styles.hoverText}>
-                                                    {a.title}
-                                                </div>
-                                                <span className={styles.albumCover}>
-                                                    {a.artwork ? <Image src={a.artwork} alt={`${a.id} artwork`}/> : <Image src={placeholderUrl} alt={`${a.id} artwork`}/>}
-                                                </span>
-                                            </Link>
-                                        </div>
-                                        }
-                            )
-                        }
-                    </div>
+                    <Container>
+                        <h1>Computer Music</h1>
+                        <div className="albumGrid">
+                            {
+                                albums.map(a => {
+                                    return <div key={`${a.id}`} sm={6} md={3} className="p-2">
+                                                <Link to={`${url}/${a.id}`}>
+                                                    <span>
+                                                        {
+                                                            a.artwork ? 
+                                                            <Image src={a.artwork} alt={`${a.id} artwork`} /> : 
+                                                            <Image src={placeholderUrl} alt={`${a.id} artwork`} />
+                                                        }
+                                                    </span>
+                                                </Link>
+                                            </div>
+                                            }
+                                )
+                            }
+                        </div>
+                    </Container>
                 </Route>
                 <Route path={`${path}/:albumId`}>
                     <Album albums={albums}/>

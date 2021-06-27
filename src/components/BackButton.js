@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './BackButton.module.css';
 import { useHistory } from 'react-router-dom'
 
 const BackButton = () => {
@@ -11,7 +10,7 @@ const BackButton = () => {
     }
     return(
         <>
-            <button className={styles.backButton} onClick={onClickHandler}> {'<-- Back'}</button>
+            <button onClick={onClickHandler} className="backButton"> {'<-- Back'}</button>
         </>
     )
 }

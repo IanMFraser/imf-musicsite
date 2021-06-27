@@ -17,11 +17,44 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 main>.container {
   padding:0;
+}
+
+span>img{
+  height: 300px;
+  width: 300px;
+}
+
+.albumGrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.backButton {
+  font-family: 'Fira Code', monospace;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  text-shadow:
+  -.5px -.5px 0 black,
+  .5px -.5px 0 black,
+  -.5px .5px 0 black,
+  .5px .5px 0 black;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .card, .card-header, .card-footer {
@@ -43,6 +76,7 @@ main>.container {
   text-align: center;
   font-size: .75rem;
 }
+
 
 .list-group-item {
   background-color:#f8f8f8;
@@ -86,6 +120,10 @@ main>.container {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .albumGrid {
+    flex-direction: row;
+}
 
   .card {
     width: 75%;

@@ -5,8 +5,8 @@ import Container from 'react-bootstrap/Container'
 
 const Home = () => {
     return(
-        <main >
-            <Container className="m-0 ml-5">
+        <main>
+            <Container >
                 <News />
                 <OldNews />
             </Container>
