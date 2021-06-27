@@ -10,7 +10,7 @@ const BackButton = () => {
     }
     return(
         <>
-            <button onClick={onClickHandler}> {'<-- Back'}</button>
+            <button onClick={onClickHandler} className="backButton"> {'<-- Back'}</button>
         </>
     )
 }

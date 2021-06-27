@@ -9,9 +9,9 @@ const News = () => {
 
     return(
         <Card className="border-0">
-            <Card.Header as="h1" className="border-0">News</Card.Header>
-            <Card.Body>
-                <Card.Title className="mx-2">{currentNews.title}</Card.Title>
+            <Card.Header as="h1" className="border-0 px-0">News</Card.Header>
+            <Card.Body className="px-0">
+                <Card.Title className="mr-2">{currentNews.title}</Card.Title>
                 <Card.Subtitle className="m-2 text-muted">
                     {currentNews.date} 
                     <Badge variant="info" className="ml-2">{currentNews.category}</Badge>

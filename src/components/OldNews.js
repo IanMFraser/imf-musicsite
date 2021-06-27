@@ -10,11 +10,11 @@ const OldNews = () => {
 
     return(
         <Card className="border-0">
-            <Card.Header as="h2" className="border-0">OLD NEWS</Card.Header>
+            <Card.Header as="h2" className="border-0 px-0">OLD NEWS</Card.Header>
                 <ListGroup variant="flush" as="ul">
                         {
                             oldNews.map(news => {
-                                return <ListGroup.Item key={news.id} as="li" className="mt-2 border-0">
+                                return <ListGroup.Item key={news.id} as="li" className="mt-2 border-0 px-0">
                                     <strong>
                                         {`${news.date}`}
                                         <Badge variant={news.categoryVariant} className="mx-2">
