@@ -20,15 +20,20 @@ const Music = () => {
                         <div className="albumGrid">
                             {
                                 albums.map(a => {
-                                    return <div key={`${a.id}`} sm={6} md={3} className="p-2">
+                                    return <div key={`${a.id}`} sm={6} md={3} className="imgCell p-2">
                                                 <Link to={`${url}/${a.id}`}>
                                                     <span>
                                                         {
                                                             a.artwork ? 
-                                                            <Image src={a.artwork} alt={`${a.id} artwork`} /> : 
+                                                            <Image src={a.artwork} alt={`${a.id} artwork`} className="albumImage" /> : 
                                                             <Image src={placeholderUrl} alt={`${a.id} artwork`} />
                                                         }
                                                     </span>
+                                                    <div className="overlay">
+                                                        <div className="albumTitle">
+                                                            {a.title}
+                                                        </div>
+                                                    </div>
                                                 </Link>
                                             </div>
                                             }

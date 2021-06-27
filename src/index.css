@@ -57,6 +57,25 @@ span>img{
   transition: all .3s;
 }
 
+.albumImage {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.albumTitle {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .card, .card-header, .card-footer {
   background-color: #f8f8f8;
 }
@@ -77,6 +96,13 @@ span>img{
   font-size: .75rem;
 }
 
+.imgCell {
+  position: relative;
+}
+
+.imgCell:hover .overlay {
+  opacity: 0.85;
+}
 
 .list-group-item {
   background-color:#f8f8f8;
@@ -93,6 +119,19 @@ span>img{
 
 .newsLink:visited {
   color: #FF5858;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f7f7f7;
 }
 
 /* Bounce In */
