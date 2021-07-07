@@ -1,7 +1,6 @@
 import React from 'react'
 import data from '../data.json'
 import ListGroup from 'react-bootstrap/ListGroup'
-import Badge from 'react-bootstrap/Badge'
 import Card from 'react-bootstrap/Card'
 
 const OldNews = () => {
@@ -16,10 +15,8 @@ const OldNews = () => {
                             oldNews.map(news => {
                                 return <ListGroup.Item key={news.id} as="li" className="mt-2 border-0 px-0">
                                     <strong>
-                                        {`${news.date}`}
-                                        <Badge variant={news.categoryVariant} className="mx-2">
-                                            {news.category}
-                                        </Badge>
+                                        {`${news.date} `}
+                                        {news.category}
                                     </strong>
                                     { ` ${news.content} `}
                                     { news.link && <a className="newsLink hvrBounceIn" href={news.link} target="_blank" rel="noreferrer">{ ' >>'} </a>}

@@ -1,6 +1,5 @@
 import React from 'react'
 import data from '../data.json'
-import Badge from 'react-bootstrap/Badge'
 import Card from 'react-bootstrap/Card'
 
 const News = () => {
@@ -14,7 +13,7 @@ const News = () => {
                 <Card.Title className="mr-2">{currentNews.title}</Card.Title>
                 <Card.Subtitle className="m-2 text-muted">
                     {currentNews.date} 
-                    <Badge variant="info" className="ml-2">{currentNews.category}</Badge>
+                    <span className="ml-2">{currentNews.category}</span>
                 </Card.Subtitle>
                 <Card.Img src={currentNews.images} className="mt-4"></Card.Img>
                 <Card.Text className="mt-4">{currentNews.content} {currentNews.link && <a className="newsLink hvrBounceIn" href={currentNews.link} target="_blank" rel="noreferrer">{ '>>'} </a>}</Card.Text>
